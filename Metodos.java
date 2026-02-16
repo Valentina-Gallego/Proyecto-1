@@ -24,6 +24,13 @@
         }
         return r;
     }
+    public objVehiculo[] CalcularNuevoPago(objVehiculo[] r) 
+    {
+        for (int i = 0; i < r.length; i++) {
+            r[i].setPagoActual(r[i].getPagoAnterior() * 1.23);
+        }
+        return r;
+    }
 
      public void Mostrarregistros(ObjVehiculo[] r)  
     {
