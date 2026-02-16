@@ -8,9 +8,9 @@ public class Principal {
         int cant = 0;
         System.out.println("Ingrese la dimension del patio ");
         cant = teclado.nextInt();
-        objVehiculo[] r = new objVehiculo[cant];
+        objVehiculo[] r = new objVehiculo[cant];//.
         r = m.LlenarRegistros(r);
-        r = m.calcularNuevoPago(r);
-        m.mostrarRegistros(r);
+        r = m.CalcularNuevoPago(r);
+        m.Mostrarregistros(r);
     }
 }
