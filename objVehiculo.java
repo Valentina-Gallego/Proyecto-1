@@ -1,14 +1,15 @@
 public class objVehiculo {
     private String Marca;
     private String Tipo;
-    private int Celda;
+    private int NumeroCelda;
     private int Cilindraje;
     private double PagoAnterior;
     private double PagoActual;
-    public objVehiculo(String marca, String tipo, int celda, int cilindraje, double pagoAnterior, double pagoActual) {
+    public objVehiculo(String marca, String tipo, int numeroCelda, int cilindraje, double pagoAnterior,
+            double pagoActual) {
         Marca = marca;
         Tipo = tipo;
-        Celda = celda;
+        NumeroCelda = numeroCelda;
         Cilindraje = cilindraje;
         PagoAnterior = pagoAnterior;
         PagoActual = pagoActual;
@@ -27,11 +28,11 @@ public class objVehiculo {
     public void setTipo(String tipo) {
         Tipo = tipo;
     }
-    public int getCelda() {
-        return Celda;
+    public int getNumeroCelda() {
+        return NumeroCelda;
     }
-    public void setCelda(int celda) {
-        Celda = celda;
+    public void setNumeroCelda(int numeroCelda) {
+        NumeroCelda = numeroCelda;
     }
     public int getCilindraje() {
         return Cilindraje;
@@ -51,6 +52,7 @@ public class objVehiculo {
     public void setPagoActual(double pagoActual) {
         PagoActual = pagoActual;
     }
+    
 
     
 }
