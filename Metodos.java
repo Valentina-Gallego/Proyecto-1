@@ -5,7 +5,7 @@
     public objVehiculo[] LlenarRegistros(objVehiculo[] r)
     {
         for (int i = 0; i < r.length; i++) {
-            objVehiculo o = new objVehiculo;
+            objVehiculo o = new objVehiculo();
             System.out.println("Ingrese la marca");
             o.setMarca(sc.next());
             System.out.println("Ingrese el tipo de vehiculo");
@@ -32,7 +32,7 @@
         return r;
     }
 
-     public void Mostrarregistros(ObjVehiculo[] r)  
+     public void Mostrarregistros(objVehiculo[] r)  
     {
         for (int i = 0; i < r.length; i++) {
             System.out.println("Marca: " + r[i].getMarca());
